@@ -32,3 +32,18 @@ echo  $parser->parse(
 ~~~~
 
 Шаблонизатор реализован как интерпретатор, методом рекурсивного спуска.
+
+Через composer можно установить, добавив в composer.json
+~~~~
+{
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/mixrnd/DemoTemplate.git"
+    }
+  ],
+  "require": {
+    "mixrnd/DemoTemplate": "dev-master"
+  }
+}
+~~~~
