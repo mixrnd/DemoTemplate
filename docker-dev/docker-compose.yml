@@ -1,0 +1,13 @@
+version: '3'
+services:
+
+  php-cli:
+    env_file:
+      ./../.env
+    build:
+      context: ./php
+      dockerfile: php-cli.docker
+    volumes:
+      - ./../:/app
+    tty:
+      true
